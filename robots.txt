@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://us-burnout-energy-tracker.enjoy-onepage.com/sitemap.xml
