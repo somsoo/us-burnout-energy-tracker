@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Mental Battery &amp; Burnout Meter | Daily Energy Level Diagnostic</title>
+  <title>Mental Battery &amp; Burnout Meter | Free Burnout Self-Check</title>
   <link>https://us-burnout-energy-tracker.enjoy-onepage.com/</link>
-  <description>Gauge your cognitive and emotional energy levels in 60 seconds. Get personalized recharge strategies and boundary advice.</description>
+  <description>Check your burnout with the free Copenhagen Burnout Inventory: personal, work and client scores out of 100, a mental battery and a private trend tracker.</description>
   <language>en-us</language>
   <atom:link href="https://us-burnout-energy-tracker.enjoy-onepage.com/rss.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Tue, 29 Sep 2026 06:01:51 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 18:41:07 +0000</lastBuildDate>
   <item>
-    <title>Disclaimer | Mental Battery &amp; Burnout Meter | Daily Energy Level Diagnostic</title>
+    <title>Disclaimer | Mental Battery &amp; Burnout Meter</title>
     <link>https://us-burnout-energy-tracker.enjoy-onepage.com/disclaimer.html</link>
     <guid isPermaLink="true">https://us-burnout-energy-tracker.enjoy-onepage.com/disclaimer.html</guid>
-    <description>Disclaimer | Mental Battery &amp; Burnout Meter | Daily Energy Level Diagnostic</description>
-    <pubDate>Sun, 20 Sep 2026 22:07:40 +0900</pubDate>
+    <description>Disclaimer for the Mental Battery &amp; Burnout Meter.</description>
+    <pubDate>Tue, 29 Sep 2026 18:41:07 +0000</pubDate>
   </item>
   <item>
-    <title>Terms of Service | Mental Battery &amp; Burnout Meter | Daily Energy Level Diagnostic</title>
-    <link>https://us-burnout-energy-tracker.enjoy-onepage.com/terms.html</link>
-    <guid isPermaLink="true">https://us-burnout-energy-tracker.enjoy-onepage.com/terms.html</guid>
-    <description>Terms of Service | Mental Battery &amp; Burnout Meter | Daily Energy Level Diagnostic</description>
-    <pubDate>Sun, 20 Sep 2026 22:07:40 +0900</pubDate>
-  </item>
-  <item>
-    <title>Privacy Policy | Mental Battery &amp; Burnout Meter | Daily Energy Level Diagnostic</title>
+    <title>Privacy Policy | Mental Battery &amp; Burnout Meter</title>
     <link>https://us-burnout-energy-tracker.enjoy-onepage.com/privacy.html</link>
     <guid isPermaLink="true">https://us-burnout-energy-tracker.enjoy-onepage.com/privacy.html</guid>
-    <description>Privacy Policy | Mental Battery &amp; Burnout Meter | Daily Energy Level Diagnostic</description>
-    <pubDate>Sun, 20 Sep 2026 22:07:40 +0900</pubDate>
+    <description>Privacy Policy for the Mental Battery &amp; Burnout Meter.</description>
+    <pubDate>Tue, 29 Sep 2026 18:41:07 +0000</pubDate>
+  </item>
+  <item>
+    <title>Terms of Service | Mental Battery &amp; Burnout Meter</title>
+    <link>https://us-burnout-energy-tracker.enjoy-onepage.com/terms.html</link>
+    <guid isPermaLink="true">https://us-burnout-energy-tracker.enjoy-onepage.com/terms.html</guid>
+    <description>Terms of Service for the Mental Battery &amp; Burnout Meter.</description>
+    <pubDate>Tue, 29 Sep 2026 18:41:07 +0000</pubDate>
   </item>
 </channel>
 </rss>

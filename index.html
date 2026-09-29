@@ -1,308 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Mental Battery &amp; Burnout Meter | Daily Energy Check</title>
-    <meta name="description" content="Gauge your cognitive and emotional energy levels in 60 seconds. Get personalized recharge strategies and boundary advice.">
-    <link rel="canonical" href="https://us-burnout-energy-tracker.enjoy-onepage.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Mental Battery &amp; Burnout Meter | Daily Energy Check">
-    <meta property="og:description" content="Gauge your cognitive and emotional energy levels in 60 seconds. Get personalized recharge strategies and boundary advice.">
-    <meta property="og:url" content="https://us-burnout-energy-tracker.enjoy-onepage.com/">
-    <meta property="og:site_name" content="Daily Mental Energy & Burnout Diagnostic">
-    <meta property="og:image" content="https://us-burnout-energy-tracker.enjoy-onepage.com/og-image.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mental Battery &amp; Burnout Meter | Daily Energy Check">
-    <meta name="twitter:description" content="Gauge your cognitive and emotional energy levels in 60 seconds. Get personalized recharge strategies and boundary advice.">
-    <meta name="twitter:image" content="https://us-burnout-energy-tracker.enjoy-onepage.com/og-image.png">
-
-    <!-- Schema.org WebApplication -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mental Battery &amp; Burnout Meter | Free Burnout Self-Check</title>
+<meta name="description" content="Check your burnout with the free Copenhagen Burnout Inventory: personal, work and client scores out of 100, a mental battery and a private trend tracker.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://us-burnout-energy-tracker.enjoy-onepage.com/">
+<meta name="theme-color" content="#4338ca">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mental Battery &amp; Burnout Meter">
+<meta property="og:title" content="Mental Battery &amp; Burnout Meter | Free Burnout Self-Check">
+<meta property="og:description" content="Check your burnout with the free Copenhagen Burnout Inventory: personal, work and client scores out of 100, a mental battery and a private trend tracker.">
+<meta property="og:url" content="https://us-burnout-energy-tracker.enjoy-onepage.com/">
+<meta property="og:image" content="https://us-burnout-energy-tracker.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mental Battery &amp; Burnout Meter | Free Burnout Self-Check">
+<meta name="twitter:description" content="Check your burnout with the free Copenhagen Burnout Inventory: personal, work and client scores out of 100, a mental battery and a private trend tracker.">
+<meta name="twitter:image" content="https://us-burnout-energy-tracker.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Mental Battery &amp; Burnout Meter RSS" href="https://us-burnout-energy-tracker.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://us-burnout-energy-tracker.enjoy-onepage.com/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Daily Mental Energy & Burnout Diagnostic",
+      "@id": "https://us-burnout-energy-tracker.enjoy-onepage.com/#webapp",
+      "name": "Mental Battery & Burnout Meter",
       "url": "https://us-burnout-energy-tracker.enjoy-onepage.com/",
-      "description": "Gauge your cognitive and emotional energy levels in 60 seconds. Get personalized recharge strategies and boundary advice.",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "All",
-      "inLanguage": "en-US",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
+      "inLanguage": "en",
+      "description": "A free burnout self-check based on the public-domain Copenhagen Burnout Inventory. It scores personal, work-related and client-related burnout from 0 to 100, shows a mental battery, and keeps an optional trend history in your browser.",
+      "image": "https://us-burnout-energy-tracker.enjoy-onepage.com/og-image.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://us-burnout-energy-tracker.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is the Copenhagen Burnout Inventory?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A free, public-domain burnout questionnaire published by Danish researchers in 2005 (Kristensen and colleagues). It asks how often and how strongly you feel tired and worn out, with separate scores for personal, work-related and client-related burnout. It has been tested in many countries and jobs, including doctors, nurses, pharmacists, teachers and students." } },
+        { "@type": "Question", "name": "What does my score mean?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Each area is scored from 0 to 100. A score of 50 means your average answer was “sometimes” or “somewhat”. Research studies commonly treat 50 or more as high burnout. Your mental battery is 100 minus your overall score, so a lower battery means more exhaustion." } },
+        { "@type": "Question", "name": "Do I have to answer the client questions?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Only if your work involves people you serve, such as clients, patients, customers or students. Tick the box to add those six questions and choose the word that fits your job. Your personal and work-related scores do not depend on them." } },
+        { "@type": "Question", "name": "Is this a diagnosis?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. It is a self-check, not a medical or psychological assessment. The World Health Organization describes burnout as an occupational phenomenon, not a medical condition. Long-lasting exhaustion can also come from sleep problems, depression or other health issues, so talk with a doctor if it lasts or gets in the way of daily life. In a crisis, call or text 988, or call 911 in an emergency." } },
+        { "@type": "Question", "name": "Where are my answers saved?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nowhere unless you choose. Your answers are not sent to us. Your scores are saved in this browser only when you press Save to my history, and Clear history deletes them. If you press Copy result or Share link, your answers are put into the link so the person who opens it sees the same result." } }
+      ]
+    }
+  ]
+}
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
+<style>
+:root{--bg:#f5f5fc;--card:#fff;--ink:#1e1b4b;--muted:#5f5b7a;--accent:#4f46e5;--line:#e0def5;--g:#15803d;--r:#b91c1c}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.header{background:linear-gradient(135deg,#312e81,#7c3aed);color:#fff;text-align:center;padding:26px 16px 22px}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{opacity:.92;margin-top:6px;font-size:.95rem}
+.wrap{max-width:1080px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;align-items:start}.result{position:sticky;top:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.1rem;margin:0 0 10px}
+.card h3{font-size:1rem;margin:16px 0 4px}
+.lbl{display:block;font-weight:600;margin:8px 0 4px;font-size:.95rem}
+select{width:100%;font:inherit;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.chk{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:.95rem}
+.hint{font-size:.86rem;color:var(--muted);margin:6px 0}
+.q{border:0;border-top:1px solid var(--line);margin:0;padding:10px 0;min-width:0}
+.q legend{font-weight:600;padding:0;margin-bottom:6px}
+.opts{display:flex;flex-wrap:wrap;gap:6px}
+.opts label{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:.9rem;cursor:pointer;background:#fff}
+.opts input{margin:0;accent-color:var(--accent)}
+.opts label:has(input:checked){background:#eef2ff;border-color:var(--accent)}
+.btn{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.err{color:var(--r);font-weight:600;margin:10px 0 0}
+.status-line{font-size:.9rem;color:var(--muted);margin:10px 0 0;font-weight:600}
+.battery{position:relative;height:38px;border:3px solid #312e81;border-radius:9px;margin:4px 12px 8px 0;padding:3px;background:#fff}
+.battery::after{content:"";position:absolute;right:-11px;top:9px;width:6px;height:14px;background:#312e81;border-radius:0 3px 3px 0}
+.battery-fill{height:100%;width:0;border-radius:5px;background:var(--g);transition:width .4s}
+.battery-fill.low{background:#dc2626}
+.bat-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.bat-pct{font-size:2.2rem;font-weight:800;color:#312e81}
+.bat-state{font-weight:700}
+.sum{margin:4px 0 8px;color:var(--muted)}
+.scales{list-style:none;margin:6px 0;padding:0}
+.scales li{border-top:1px solid var(--line);padding:8px 0}
+.scales .k{font-weight:700}
+.scales .v{float:right;font-weight:800}
+.lvl{display:block;font-size:.88rem}
+.lvl.hi{color:var(--r)}.lvl.ok{color:var(--g)}
+.bar{height:8px;background:#eef2ff;border-radius:99px;margin-top:5px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.bar i.hi{background:var(--r)}
+.advice{margin:8px 0 0;padding-left:18px}
+.advice li{margin:4px 0}
+.crisis{border:1px solid #fecaca;background:#fef2f2;color:#7f1d1d;border-radius:12px;padding:10px 12px;margin:10px 0 0;font-weight:600}
+.tbl-wrap{overflow-x:auto}
+.hist{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hist th,.hist td{text-align:left;padding:6px 8px;border-top:1px solid var(--line);white-space:nowrap}
+.delta{font-size:.8rem;color:var(--muted);margin-left:4px}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#3f3b63}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.src{font-size:.85rem;color:var(--muted)}
+.ad-box{max-width:1080px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1e1b4b;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+<header class="header">
+  <h1>Mental Battery &amp; Burnout Meter</h1>
+  <div class="header-sub">A free burnout self-check based on the Copenhagen Burnout Inventory · private, no sign-up</div>
+</header>
+
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block;height:60px;max-height:90px" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: top -->
+
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" id="quiz" aria-labelledby="in-h">
+      <h2 id="in-h">1. How have you been feeling?</h2>
+      <p class="hint">Pick the answer that fits best for each question. There are no right or wrong answers.</p>
+      <h3>Personal</h3>
+      <div id="qs-p"></div>
+      <h3>Work</h3>
+      <div id="qs-w"></div>
+      <h3>People you serve (optional)</h3>
+      <label class="chk"><input type="checkbox" id="use-c"> My work involves people I serve</label>
+      <div id="sec-c" hidden>
+        <label class="lbl" for="who">They are my</label>
+        <select id="who">
+          <option value="clients" selected>clients</option>
+          <option value="patients">patients</option>
+          <option value="customers">customers</option>
+          <option value="students">students</option>
+        </select>
+        <div id="qs-c"></div>
+      </div>
+      <noscript><p class="err">This self-check needs JavaScript to show the questions.</p></noscript>
+      <p class="status-line" id="progress" role="status">Answered 0 of 13 questions.</p>
+    </section>
+
+    <section class="card result" aria-labelledby="out-h">
+      <h2 id="out-h">2. Your mental battery</h2>
+      <div class="battery" aria-hidden="true"><div class="battery-fill" id="battery-fill"></div></div>
+      <div class="bat-row"><span class="bat-pct" id="out-battery">–</span><span class="bat-state" id="out-state" aria-live="polite">Answer every question to see your scores.</span></div>
+      <p class="sum" id="out-overall"></p>
+      <ul class="scales" id="out-scales"></ul>
+      <ul class="advice" id="out-advice"></ul>
+      <p class="crisis" id="crisis" role="alert" hidden>You answered that you often think “I can’t take it anymore.” If you feel you can’t cope or might harm yourself, call or text 988 to reach the Suicide &amp; Crisis Lifeline, free and confidential, 24/7. In an emergency, call 911.</p>
+      <div class="actions">
+        <button type="button" class="btn primary" id="btn-copy" disabled>📋 Copy result</button>
+        <button type="button" class="btn" id="btn-share" disabled>📤 Share link</button>
+        <button type="button" class="btn" id="btn-save" disabled>💾 Save to my history</button>
+        <button type="button" class="btn" id="btn-reset">↺ Start over</button>
+      </div>
+    </section>
+  </div>
+
+<!-- ADSENSE START: mid (right after the result card) -->
+<div class="ad-box ad-mid">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
+
+  <section class="card" id="history" aria-labelledby="hist-h">
+    <h2 id="hist-h">📈 Your check-ins</h2>
+    <p class="hint">Saved only in this browser. Checking in every week or two shows how your energy changes.</p>
+    <p id="hist-empty">No saved check-ins yet. Answer the questions and press Save to my history.</p>
+    <div class="tbl-wrap">
+      <table class="hist" id="hist-table" hidden>
+        <thead><tr><th scope="col">Date</th><th scope="col">Battery</th><th scope="col">Personal</th><th scope="col">Work</th><th scope="col">Client</th></tr></thead>
+        <tbody id="hist-body"></tbody>
+      </table>
+    </div>
+    <div class="actions"><button type="button" class="btn" id="btn-clear" disabled>🗑️ Clear history</button></div>
+  </section>
+
+  <section class="card" aria-labelledby="how-h">
+    <h2 id="how-h">🧮 How the scores work</h2>
+    <ul>
+      <li><strong>The questions:</strong> the Copenhagen Burnout Inventory, a free, public-domain questionnaire from Danish researchers (Kristensen and colleagues, 2005). It measures physical and psychological fatigue and exhaustion in three areas: personal (6 questions), work-related (7) and client-related (6, only if your work involves people you serve).</li>
+      <li><strong>Scoring:</strong> each answer scores 100 (Always or To a very high degree), 75, 50, 25 or 0 (Never or almost never, or To a very low degree). The question about energy for family and friends is scored the other way round, because more energy means less burnout. Each area's score is the average of its answers, from 0 to 100.</li>
+      <li><strong>Overall score and battery:</strong> the overall score is the average of all your answers. The mental battery is 100 minus that, so a full battery means no signs of burnout.</li>
+      <li><strong>The 50 line:</strong> research studies commonly treat an average of 50 or more as high burnout. The meter flags any area at 50 or above. It is a screening line, not a diagnosis.</li>
+      <li><strong>History:</strong> Save to my history keeps the date and your scores in this browser, one check-in per day, so you can see your trend.</li>
+    </ul>
+    <p class="src">Sources: Kristensen and colleagues, The Copenhagen Burnout Inventory, Work &amp; Stress, 2005 (questions and scoring as listed by the UC San Diego EMERGE measures library and in a 2022 American Board of Emergency Medicine study in JACEP Open); Li and colleagues, Academic Emergency Medicine, 2024 (the cut-off of 50); World Health Organization, ICD-11 definition of burn-out; 988 Suicide &amp; Crisis Lifeline. Checked September 30, 2026.</p>
+  </section>
+
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ Frequently asked questions</h2>
+    <div class="faq-item"><h3>What is the Copenhagen Burnout Inventory?</h3><p>A free, public-domain burnout questionnaire published by Danish researchers in 2005 (Kristensen and colleagues). It asks how often and how strongly you feel tired and worn out, with separate scores for personal, work-related and client-related burnout. It has been tested in many countries and jobs, including doctors, nurses, pharmacists, teachers and students.</p></div>
+    <div class="faq-item"><h3>What does my score mean?</h3><p>Each area is scored from 0 to 100. A score of 50 means your average answer was “sometimes” or “somewhat”. Research studies commonly treat 50 or more as high burnout. Your mental battery is 100 minus your overall score, so a lower battery means more exhaustion.</p></div>
+    <div class="faq-item"><h3>Do I have to answer the client questions?</h3><p>Only if your work involves people you serve, such as clients, patients, customers or students. Tick the box to add those six questions and choose the word that fits your job. Your personal and work-related scores do not depend on them.</p></div>
+    <div class="faq-item"><h3>Is this a diagnosis?</h3><p>No. It is a self-check, not a medical or psychological assessment. The World Health Organization describes burnout as an occupational phenomenon, not a medical condition. Long-lasting exhaustion can also come from sleep problems, depression or other health issues, so talk with a doctor if it lasts or gets in the way of daily life. In a crisis, call or text 988, or call 911 in an emergency.</p></div>
+    <div class="faq-item"><h3>Where are my answers saved?</h3><p>Nowhere unless you choose. Your answers are not sent to us. Your scores are saved in this browser only when you press Save to my history, and Clear history deletes them. If you press Copy result or Share link, your answers are put into the link so the person who opens it sees the same result.</p></div>
+  </section>
+
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ Please note</h2>
+    <p>This self-check is general information, not medical, psychological or legal advice, and it cannot diagnose any condition. If you feel unable to cope or have thoughts of harming yourself, call or text 988 to reach the Suicide &amp; Crisis Lifeline (free, confidential, 24/7), or call 911 in an emergency.</p>
+  </section>
+</main>
+
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
+
+<footer class="footer">
+  <p>A free burnout self-check. Your answers stay on your device, and saved check-ins never leave this browser.</p>
+  <p><a href="/disclaimer.html">Disclaimer</a> | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+</footer>
+
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://us-burnout-energy-tracker.enjoy-onepage.com';
+  var TOOL_NAME = 'Mental Battery & Burnout Meter';
+  var STORE = 'burnout.history.v1';
+  /* Copenhagen Burnout Inventory (Kristensen et al., 2005). Answer index 4..0 scores 100, 75, 50, 25, 0. */
+  var FREQ = ['Never or almost never', 'Seldom', 'Sometimes', 'Often', 'Always'];
+  var DEG = ['To a very low degree', 'To a low degree', 'Somewhat', 'To a high degree', 'To a very high degree'];
+  var WHO = ['clients', 'patients', 'customers', 'students'];
+  var WHO_LABEL = { clients: 'Client-related', patients: 'Patient-related', customers: 'Customer-related', students: 'Student-related' };
+  var Q = [
+    { id: 'p1', s: 'p', f: 1, t: 'How often do you feel tired?' },
+    { id: 'p2', s: 'p', f: 1, t: 'How often are you physically exhausted?' },
+    { id: 'p3', s: 'p', f: 1, t: 'How often are you emotionally exhausted?' },
+    { id: 'p4', s: 'p', f: 1, t: 'How often do you think: “I can’t take it anymore”?' },
+    { id: 'p5', s: 'p', f: 1, t: 'How often do you feel worn out?' },
+    { id: 'p6', s: 'p', f: 1, t: 'How often do you feel weak and susceptible to illness?' },
+    { id: 'w1', s: 'w', f: 1, t: 'Do you feel worn out at the end of the working day?' },
+    { id: 'w2', s: 'w', f: 1, t: 'Are you exhausted in the morning at the thought of another day at work?' },
+    { id: 'w3', s: 'w', f: 1, t: 'Do you feel that every working hour is tiring for you?' },
+    { id: 'w4', s: 'w', f: 1, r: 1, t: 'Do you have enough energy for family and friends during leisure time?' },
+    { id: 'w5', s: 'w', f: 0, t: 'Is your work emotionally exhausting?' },
+    { id: 'w6', s: 'w', f: 0, t: 'Does your work frustrate you?' },
+    { id: 'w7', s: 'w', f: 0, t: 'Do you feel burnt out because of your work?' },
+    { id: 'c1', s: 'c', f: 0, t: 'Do you find it hard to work with {who}?' },
+    { id: 'c2', s: 'c', f: 0, t: 'Does it drain your energy to work with {who}?' },
+    { id: 'c3', s: 'c', f: 0, t: 'Do you find it frustrating to work with {who}?' },
+    { id: 'c4', s: 'c', f: 0, t: 'Do you feel that you give more than you get back when you work with {who}?' },
+    { id: 'c5', s: 'c', f: 1, t: 'Are you tired of working with {who}?' },
+    { id: 'c6', s: 'c', f: 1, t: 'Do you sometimes wonder how long you will be able to continue working with {who}?' }
+  ];
+  var ADV = {
+    p: 'Personal: you often feel tired or worn out. Protect your sleep and recovery time. If the exhaustion lasts for weeks or gets in the way of daily life, talk with a doctor, because sleep problems, depression and other health issues can feel similar.',
+    w: 'Work: your exhaustion seems tied to your job. Consider talking with your manager or HR about workload and priorities, and check whether your employer offers an Employee Assistance Program (EAP).',
+    c: 'working with people is draining you. Short breaks between interactions, clear boundaries and support from colleagues or a supervisor may help.',
+    none: 'All your scores are below 50, the usual high-burnout line. Check in again in a week or two to see how things change.'
+  };
+
+  function $(id) { return document.getElementById(id); }
+  function on(id, ev, fn) { var el = $(id); if (el) el.addEventListener(ev, fn); }
+  function setText(id, t) { var el = $(id); if (el) el.textContent = t; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function useClient() { var el = $('use-c'); return !!(el && el.checked); }
+  function who() { var el = $('who'); return el && WHO.indexOf(el.value) >= 0 ? el.value : 'clients'; }
+  function included() { var c = useClient(); return Q.filter(function (q) { return q.s !== 'c' || c; }); }
+
+  /* ---------- questions ---------- */
+  function legendText(q, i) { return (i + 1) + '. ' + q.t.replace('{who}', who()); }
+  function build() {
+    Q.forEach(function (q, i) {
+      var box = $('qs-' + q.s); if (!box) return;
+      var fs = document.createElement('fieldset'); fs.className = 'q'; fs.id = 'q-' + q.id;
+      var lg = document.createElement('legend'); lg.textContent = legendText(q, i); fs.appendChild(lg);
+      var opts = document.createElement('div'); opts.className = 'opts';
+      for (var v = 4; v >= 0; v--) {
+        var lb = document.createElement('label'), inp = document.createElement('input');
+        inp.type = 'radio'; inp.name = q.id; inp.value = String(v);
+        lb.appendChild(inp); lb.appendChild(document.createTextNode((q.f ? FREQ : DEG)[v]));
+        opts.appendChild(lb);
+      }
+      fs.appendChild(opts); box.appendChild(fs);
+    });
+  }
+  function relabel() {
+    Q.forEach(function (q, i) { if (q.s === 'c') { var fs = $('q-' + q.id); if (fs && fs.firstChild) fs.firstChild.textContent = legendText(q, i); } });
+  }
+  function showClient() { var sec = $('sec-c'); if (sec) sec.hidden = !useClient(); }
+  function answers() {
+    var a = {};
+    Q.forEach(function (q) { var el = document.querySelector('input[name="' + q.id + '"]:checked'); if (el) a[q.id] = Number(el.value); });
+    return a;
+  }
+
+  /* ---------- scoring: each area = average of its answers (0-100); overall = average of all answers ---------- */
+  function itemScore(q, idx) { var v = idx * 25; return q.r ? 100 - v : v; }
+  function scores(a, items) {
+    var sum = { p: 0, w: 0, c: 0 }, n = { p: 0, w: 0, c: 0 }, all = 0;
+    items.forEach(function (q) { var v = itemScore(q, a[q.id]); sum[q.s] += v; n[q.s] += 1; all += v; });
+    return { p: sum.p / n.p, w: sum.w / n.w, c: n.c ? sum.c / n.c : null, o: all / items.length, n: items.length };
+  }
+
+  /* ---------- results ---------- */
+  var cur = null;
+  function scaleRow(key, label, v) {
+    var r = Math.round(v), hi = v >= 50;
+    return '<li data-scale="' + key + '" data-high="' + (hi ? 1 : 0) + '"><span class="k">' + label + '</span><span class="v">' + r + '/100</span>' +
+           '<span class="lvl ' + (hi ? 'hi">High (50 or more)' : 'ok">Below 50') + '</span><div class="bar"><i class="' + (hi ? 'hi' : '') + '" style="width:' + r + '%"></i></div></li>';
+  }
+  function clearOut() {
+    var f = $('battery-fill'); if (f) { f.style.width = '0'; f.className = 'battery-fill'; }
+    setText('out-battery', '–');
+    setText('out-state', 'Answer every question to see your scores.');
+    setText('out-overall', '');
+    var sc = $('out-scales'); if (sc) sc.innerHTML = '';
+    var ad = $('out-advice'); if (ad) ad.innerHTML = '';
+    ['btn-copy', 'btn-share', 'btn-save'].forEach(function (id) { var b = $(id); if (b) b.disabled = true; });
+  }
+  function paintOut() {
+    var s = cur.s, o = Math.round(s.o), bat = 100 - o, low = s.o >= 50;
+    var f = $('battery-fill'); if (f) { f.style.width = bat + '%'; f.className = 'battery-fill' + (low ? ' low' : ''); }
+    setText('out-battery', bat + '%');
+    setText('out-state', low ? '🪫 Running low' : '🔋 Holding a charge');
+    setText('out-overall', 'Overall burnout score: ' + o + ' out of 100, the average of all ' + s.n + ' answers.');
+    var html = scaleRow('p', 'Personal burnout', s.p) + scaleRow('w', 'Work-related burnout', s.w);
+    if (s.c !== null) html += scaleRow('c', WHO_LABEL[cur.who] + ' burnout', s.c);
+    var sc = $('out-scales'); if (sc) sc.innerHTML = html;
+    var tips = [];
+    if (s.p >= 50) tips.push(ADV.p);
+    if (s.w >= 50) tips.push(ADV.w);
+    if (s.c !== null && s.c >= 50) tips.push(WHO_LABEL[cur.who] + ': ' + ADV.c);
+    if (!tips.length) tips.push(ADV.none);
+    var ad = $('out-advice');
+    if (ad) { ad.innerHTML = ''; tips.forEach(function (t) { var li = document.createElement('li'); li.textContent = t; ad.appendChild(li); }); }
+    ['btn-copy', 'btn-share', 'btn-save'].forEach(function (id) { var b = $(id); if (b) b.disabled = false; });
+  }
+  function render() {
+    var items = included(), a = answers();
+    var done = items.filter(function (q) { return a[q.id] !== undefined; }).length;
+    setText('progress', done === items.length ? 'All ' + items.length + ' questions answered.' : 'Answered ' + done + ' of ' + items.length + ' questions.');
+    var cr = $('crisis'); if (cr) cr.hidden = !(a.p4 >= 3);
+    if (done < items.length) { cur = null; clearOut(); return; }
+    cur = { a: a, s: scores(a, items), items: items, who: who(), client: useClient() };
+    paintOut();
+  }
+
+  /* ---------- history (this browser only, one check-in per day) ---------- */
+  function validEntry(e) {
+    return e && typeof e.d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(e.d) && isFinite(e.o) && isFinite(e.p) && isFinite(e.w) &&
+           (e.c === null || isFinite(e.c));
+  }
+  function loadHist() {
+    var h;
+    try { h = JSON.parse(localStorage.getItem(STORE) || '[]'); } catch (e) { h = []; }
+    if (!Array.isArray(h)) h = [];
+    return h.filter(validEntry).sort(function (x, y) { return x.d < y.d ? -1 : (x.d > y.d ? 1 : 0); });
+  }
+  function saveHist(h) { try { localStorage.setItem(STORE, JSON.stringify(h.slice(-52))); return true; } catch (e) { return false; } }
+  function todayKey() { var d = new Date(); return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
+  function dateLabel(k) { var p = k.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
+  function renderHist() {
+    var h = loadHist(), tbl = $('hist-table'), body = $('hist-body'), empty = $('hist-empty'), clr = $('btn-clear');
+    if (tbl) tbl.hidden = !h.length;
+    if (empty) empty.hidden = !!h.length;
+    if (clr) clr.disabled = !h.length;
+    if (!body) return;
+    var rows = [];
+    for (var i = h.length - 1; i >= 0; i--) {
+      var e = h[i], bat = 100 - Math.round(e.o), prev = h[i - 1], d = '';
+      if (prev) { var dv = bat - (100 - Math.round(prev.o)); d = '<span class="delta">' + (dv > 0 ? '+' + dv : (dv < 0 ? '−' + (-dv) : '±0')) + '</span>'; }
+      rows.push('<tr><td>' + dateLabel(e.d) + '</td><td>' + bat + '%' + d + '</td><td>' + Math.round(e.p) + '</td><td>' + Math.round(e.w) + '</td><td>' +
+                (e.c === null ? '–' : Math.round(e.c)) + '</td></tr>');
+    }
+    body.innerHTML = rows.join('');
+  }
+
+  /* ---------- toast · copy · share (standard: Web Share -> clipboard -> honest message on failure) ---------- */
+  var toastTimer = null;
+  function showToastNotification(m) {
+    var el = $('global-ux-toast'); if (!el) return;
+    el.textContent = m; el.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2200);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    showToastNotification(ok ? 'Copied! Paste it anywhere to share.' : 'Could not copy. Please copy the link from the address bar.');
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { showToastNotification('Copied! Paste it anywhere to share.'); }, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+  function link() {
+    if (!cur) return SITE + '/';
+    var d = cur.items.map(function (q) { return cur.a[q.id]; }).join('');
+    return SITE + '/?a=' + d + (cur.client ? '&c=1&who=' + cur.who : '');
+  }
+  function summary() {
+    if (!cur) return '';
+    var s = cur.s, o = Math.round(s.o);
+    var lines = ['🔋 My mental battery: ' + (100 - o) + '% (overall burnout ' + o + '/100)',
+                 '• Personal burnout: ' + Math.round(s.p) + '/100',
+                 '• Work-related burnout: ' + Math.round(s.w) + '/100'];
+    if (s.c !== null) lines.push('• ' + WHO_LABEL[cur.who] + ' burnout: ' + Math.round(s.c) + '/100');
+    lines.push('Copenhagen Burnout Inventory · 50+ is the usual high-burnout line · not a diagnosis');
+    lines.push('👉 ' + TOOL_NAME + ': ' + link());
+    return lines.join('\n');
+  }
+
+  /* ---------- events ---------- */
+  on('quiz', 'change', function (e) {
+    var t = e.target;
+    if (t && t.id === 'use-c') { showClient(); render(); return; }
+    if (t && t.id === 'who') { relabel(); render(); return; }
+    if (t && t.type === 'radio') render();
+  });
+  on('btn-copy', 'click', function () { if (cur) copyText(summary()); });
+  on('btn-share', 'click', function () {
+    if (!cur) return;
+    var text = summary();
+    if (navigator.share) { navigator.share({ title: TOOL_NAME, text: text, url: link() }).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(text); }); }
+    else { copyText(text); }
+  });
+  on('btn-save', 'click', function () {
+    if (!cur) return;
+    var s = cur.s, k = todayKey();
+    var h = loadHist().filter(function (e) { return e.d !== k; });
+    h.push({ d: k, o: Math.round(s.o), p: Math.round(s.p), w: Math.round(s.w), c: s.c === null ? null : Math.round(s.c) });
+    showToastNotification(saveHist(h) ? 'Saved in this browser only. See your check-ins below.' : 'Could not save. Your browser may be blocking storage.');
+    renderHist();
+  });
+  on('btn-reset', 'click', function () {
+    Array.prototype.forEach.call(document.querySelectorAll('#quiz input[type=radio]'), function (el) { el.checked = false; });
+    render();
+    var qz = $('quiz'); if (qz && qz.scrollIntoView) qz.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  on('btn-clear', 'click', function () {
+    if (!window.confirm('Delete all saved check-ins from this browser?')) return;
+    try { localStorage.removeItem(STORE); } catch (e) { /* storage unavailable */ }
+    renderHist();
+    showToastNotification('History cleared.');
+  });
+
+  /* ---------- start: questions -> URL answers (?a=digits&c=1&who=...) -> results and history ---------- */
+  (function init() {
+    build();
+    var q; try { q = new URLSearchParams(location.search); } catch (e) { q = null; }
+    if (q) {
+      var w = $('who'); if (w && WHO.indexOf(q.get('who')) >= 0) w.value = q.get('who');
+      var c = q.get('c') === '1', a = q.get('a') || '';
+      var items = Q.filter(function (x) { return x.s !== 'c' || c; });
+      if (new RegExp('^[0-4]{' + items.length + '}$').test(a)) {
+        var uc = $('use-c'); if (uc) uc.checked = c;
+        items.forEach(function (x, i) { var el = document.querySelector('input[name="' + x.id + '"][value="' + a.charAt(i) + '"]'); if (el) el.checked = true; });
       }
     }
-    </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Layout Shield: Anti 390px Horizontal Overflow -->
-    <style id="layout-shield">
-        html, body {
-            max-width: 100% !important;
-            width: 100% !important;
-            overflow-x: hidden !important;
-        }
-        main, article, .container {
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-        }
-        .manual-ad-box {
-            width: 100%;
-            max-width: 960px;
-            overflow: hidden;
-            margin: 12px auto;
-        }
-        .manual-ad-box ins {
-            max-width: 100% !important;
-            display: block;
-        }
-    </style>
-  <link rel="alternate" type="application/rss+xml" title="Mental Battery &amp; Burnout Meter | Daily Energy Check" href="https://us-burnout-energy-tracker.enjoy-onepage.com/rss.xml">
-  <link rel="sitemap" type="application/xml" href="https://us-burnout-energy-tracker.enjoy-onepage.com/sitemap.xml">
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
-
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 font-black text-slate-900 text-lg sm:text-xl tracking-tight">
-                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-black shadow-sm">1P</span>
-                <span>Daily Mental Energy & Burnout Diagnostic</span>
-            </a>
-            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-                2026 US Edition
-            </span>
-        </div>
-    </header>
-
-    <!-- Main Workspace -->
-    <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-        <!-- Title Banner -->
-        <div class="mb-8 text-center max-w-2xl mx-auto">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-2">Daily Mental Energy & Burnout Diagnostic</h1>
-            <p class="text-sm sm:text-base text-slate-600">Gauge your cognitive and emotional energy levels in 60 seconds. Get personalized recharge strategies and boundary advice.</p>
-        </div>
-
-        <!-- 2-Column Gold Standard Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left: Input Form (6 cols) -->
-            <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-base font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                    <span>Input Parameters</span>
-                </h2>
-                
-        <div class="space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Primary Value / Amount ($)</label>
-                <div class="relative">
-                    <span class="absolute left-3 top-3 text-slate-400 font-bold">$</span>
-                    <input type="text" id="primaryVal" value="1,000" class="w-full pl-8 pr-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="1,000">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Secondary Parameter / Multiplier</label>
-                <input type="number" id="secVal" value="12" min="1" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Calculation Category</label>
-                <select id="calcCat" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                    <option value="standard">Standard US Model (Benchmark)</option>
-                    <option value="conservative">Conservative Estimate (-10%)</option>
-                    <option value="growth">Accelerated Target (+15%)</option>
-                </select>
-            </div>
-        </div>
-        
-                <button type="button" onclick="calculate()" class="mt-6 w-full py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-black text-base rounded-xl shadow-md transition duration-150 cursor-pointer whitespace-nowrap">
-                    Calculate Now
-                </button>
-            </div>
-
-            <!-- Right: Results Card (6 cols sticky) -->
-            <div class="lg:col-span-6 lg:sticky lg:top-24">
-                <div id="resultCard" class="hidden">
-                    
-        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md mb-6">
-            <p class="text-xs uppercase font-bold tracking-wider opacity-90 mb-1">Estimated Annual Result</p>
-            <h3 id="resPrimary" class="text-3xl sm:text-4xl font-black tracking-tight">$0</h3>
-            <p class="text-xs mt-2 opacity-80">Calculated under standard US benchmarking formulas</p>
-        </div>
-        <div class="space-y-3 text-sm text-slate-700 bg-white p-5 rounded-2xl border border-slate-200">
-            <div class="flex justify-between pb-2 border-b border-slate-100">
-                <span class="text-slate-500">Monthly Equivalent:</span>
-                <span id="resMonthly" class="font-bold text-slate-900">$0</span>
-            </div>
-            <div class="flex justify-between pt-1">
-                <span class="font-bold text-slate-900">Growth / Variance Index:</span>
-                <span id="resBenchmark" class="font-black text-blue-600">0%</span>
-            </div>
-        </div>
-        
-                    <div class="mt-4 flex gap-3">
-                        <button type="button" onclick="copyResults()" class="flex-1 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm rounded-xl transition shadow-sm cursor-pointer whitespace-nowrap">
-                            Copy Results
-                        </button>
-                        <button type="button" onclick="resetForm()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl transition cursor-pointer whitespace-nowrap">
-                            Reset
-                        </button>
-                    </div>
-                </div>
-                <!-- Initial Placeholder -->
-                <div id="placeholderCard" class="p-8 text-center border-2 border-dashed border-slate-200 rounded-2xl text-slate-400">
-                    <p class="text-sm font-semibold">Enter your inputs on the left and click "Calculate Now" to view full projections.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- E-E-A-T Editorial FAQ Accordion -->
-        <section class="mt-14 max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-            <h2 class="text-lg sm:text-xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
-            <div class="space-y-3">
-                
-    <!-- In-Depth Guidebook CTA Banner (4-1-4 Compliance) -->
-    <div class="mt-8 mb-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold rounded-full mb-2">COMPLETE 2026 HANDBOOK</span>
-        <h3 class="text-lg font-bold text-gray-900">Want to master the statutory details? Read our in-depth guide</h3>
-        <p class="text-xs text-gray-600 mt-1">Explore official calculation formulas, edge-case exemptions, and strategic checklists.</p>
-      </div>
-      <a href="/guides/guide.html" class="whitespace-nowrap px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2 text-xs shrink-0">
-        Read In-Depth Guide &rarr;
-      </a>
-    </div>
-
-    <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>How accurate are these calculations?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Calculations use 2026 statutory formulas and verified standard economic models. While highly accurate for benchmarking, always consult a certified professional for individual legal or financial filings.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Is my personal or financial data stored?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        No. 100% of the computations occur locally in your browser's JavaScript engine. Zero personal or financial data is transmitted to or saved on external servers.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Can I export or share my calculation results?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Yes! Click the "Copy Results" button to copy a formatted summary with a link directly to your clipboard for sharing via Slack, email, or messaging apps.
-                    </p>
-                </details>
-            </div>
-        </section>
-    </main>
-
-    <!-- Floating Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-2xl opacity-0 pointer-events-none transition-opacity duration-200 z-50">
-        Copied to clipboard!
-    </div>
-
-    <!-- Modern Trust Footer -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 mt-12">
-        <div class="max-w-6xl mx-auto px-4 space-y-3">
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-semibold text-slate-600">
-                <a href="/terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
-                <span class="text-slate-300">|</span>
-                <a href="/privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
-                <span class="text-slate-300">|</span>
-                <a href="/disclaimer.html" class="hover:text-blue-600 transition">Disclaimer</a>
-            </div>
-            <p class="max-w-xl mx-auto text-slate-400">
-                This tool is provided for educational and estimation purposes only. All calculations run client-side.
-            </p>
-            <p>&copy; 2026 Daily Mental Energy & Burnout Diagnostic. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Logic Script -->
-    <script>
-        
-        function calculate() {
-            const prim = parseFloat(document.getElementById('primaryVal').value.replace(/,/g, '')) || 0;
-            const sec = parseFloat(document.getElementById('secVal').value) || 1;
-            const cat = document.getElementById('calcCat').value;
-            
-            let mult = 1.0;
-            if (cat === 'conservative') mult = 0.90;
-            if (cat === 'growth') mult = 1.15;
-            
-            const total = prim * sec * mult;
-            const monthly = total / 12;
-            const rate = ((total / (prim || 1)) * 10).toFixed(1);
-            
-            document.getElementById('resPrimary').textContent = '$' + Math.round(total).toLocaleString('en-US');
-            document.getElementById('resMonthly').textContent = '$' + Math.round(monthly).toLocaleString('en-US');
-            document.getElementById('resBenchmark').textContent = rate + '%';
-            
-            document.getElementById('resultCard').classList.remove('hidden');
-        }
-        
-
-        function copyResults() {
-            const resCard = document.getElementById('resultCard');
-            const lines = [];
-            lines.push("Daily Mental Energy & Burnout Diagnostic - Calculation Summary");
-            lines.push("=============================");
-            resCard.querySelectorAll('.flex.justify-between').forEach(el => {
-                const k = el.querySelector('span:first-child')?.innerText || '';
-                const v = el.querySelector('span:last-child')?.innerText || '';
-                if (k && v) lines.push(k + ' ' + v);
-            });
-            lines.push("-----------------------------");
-            lines.push("👉 Try it here: https://us-burnout-energy-tracker.enjoy-onepage.com/");
-            
-            const textToCopy = lines.join('\n');
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).then(() => showToast());
-            } else {
-                const ta = document.createElement('textarea');
-                ta.value = textToCopy;
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                showToast();
-            }
-        }
-
-        function showToast() {
-            const t = document.getElementById('toastNotification');
-            t.classList.remove('opacity-0', 'pointer-events-none');
-            setTimeout(() => {
-                t.classList.add('opacity-0', 'pointer-events-none');
-            }, 2200);
-        }
-
-        function resetForm() {
-            document.getElementById('resultCard').classList.add('hidden');
-            document.getElementById('placeholderCard').classList.remove('hidden');
-        }
-
-        // Auto calculate on load
-        window.addEventListener('DOMContentLoaded', () => {
-            calculate();
-            document.getElementById('placeholderCard').classList.add('hidden');
-        });
-    </script>
+    showClient(); relabel(); render(); renderHist();
+  })();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>
