@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mental Battery &amp; Burnout Meter | Free Burnout Self-Check</title>
-<meta name="description" content="Check your burnout with the free Copenhagen Burnout Inventory: personal, work and client scores out of 100, a mental battery and a private trend tracker.">
+<title>Mental Battery &amp; Burnout Meter</title>
+<meta name="description" content="Check your burnout with the free Copenhagen Burnout Inventory: personal,">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://us-burnout-energy-tracker.enjoy-onepage.com/">
 <meta name="theme-color" content="#4338ca">
@@ -12,13 +12,13 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Mental Battery &amp; Burnout Meter">
-<meta property="og:title" content="Mental Battery &amp; Burnout Meter | Free Burnout Self-Check">
-<meta property="og:description" content="Check your burnout with the free Copenhagen Burnout Inventory: personal, work and client scores out of 100, a mental battery and a private trend tracker.">
+<meta property="og:title" content="Mental Battery &amp; Burnout Meter">
+<meta property="og:description" content="Check your burnout with the free Copenhagen Burnout Inventory: personal,">
 <meta property="og:url" content="https://us-burnout-energy-tracker.enjoy-onepage.com/">
 <meta property="og:image" content="https://us-burnout-energy-tracker.enjoy-onepage.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mental Battery &amp; Burnout Meter | Free Burnout Self-Check">
-<meta name="twitter:description" content="Check your burnout with the free Copenhagen Burnout Inventory: personal, work and client scores out of 100, a mental battery and a private trend tracker.">
+<meta name="twitter:title" content="Mental Battery &amp; Burnout Meter">
+<meta name="twitter:description" content="Check your burnout with the free Copenhagen Burnout Inventory: personal,">
 <meta name="twitter:image" content="https://us-burnout-energy-tracker.enjoy-onepage.com/og-image.png">
 <link rel="alternate" type="application/rss+xml" title="Mental Battery &amp; Burnout Meter RSS" href="https://us-burnout-energy-tracker.enjoy-onepage.com/rss.xml">
 <link rel="sitemap" type="application/xml" href="https://us-burnout-energy-tracker.enjoy-onepage.com/sitemap.xml">
@@ -125,6 +125,25 @@ select{width:100%;font:inherit;padding:9px 11px;border:1px solid var(--line);bor
 .footer a{color:var(--muted)}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1e1b4b;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
 .toast.show{opacity:1}
+</style>
+<script id="math-guard">
+// Global Math & DOM Output Guard: prevents NaN / Infinity leaks to UI
+(function() {
+  const origToLocaleString = Number.prototype.toLocaleString;
+  Number.prototype.toLocaleString = function(locales, options) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToLocaleString.call(this, locales, options);
+  };
+  const origToFixed = Number.prototype.toFixed;
+  Number.prototype.toFixed = function(digits) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToFixed.call(this, digits);
+  };
+})();
+</script>
+<style id="ad-cls-shield">
+  .ad-bottom { min-height: 280px !important; }
+  .ad-bottom ins { min-height: 280px !important; }
 </style>
 </head>
 <body>
